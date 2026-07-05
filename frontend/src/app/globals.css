@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Базовые стили для всего сайта */
+body {
+  background-color: #0a0a0a; /* Тёмный неоновый фон */
+  color: #ffffff;            /* Белый текст */
+}
