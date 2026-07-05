@@ -19,7 +19,7 @@ export const getProfile = async (req: AuthenticatedRequest, res: Response) => {
 export const getAllUsers = async (req: AuthenticatedRequest, res: Response) => {
   try {
     const users = await prisma.user.findMany({
-      select: { id:专, email: true, name: true, isAdmin: true, isPremium: true, createdAt: true },
+      select: { id: true, email: true, name: true, isAdmin: true, isPremium: true, createdAt: true },
       orderBy: { createdAt: 'desc' }
     });
     // Исправление синтаксиса для валидного JS: id: true
